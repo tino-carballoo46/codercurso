@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*    ESTILOS GENERALES DEL BODY   */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/*   HEADER - ENCABEZADO DEL SITIO   */
+
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+/*    NAVBAR - MENÚ DE NAVEGACIÓN   */
+
+nav {
+    background-color: #2e7d32;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*   SECCIÓN HERO   */
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+}
+
+/*  SECCIÓN PRODUCTOS  */
+
+.productos {
+    padding: 40px 20px;
+}
+
+.productos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*  GRID DE PRODUCTOS  */
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/*   CARD DE PRODUCTO  */
+
+.card-producto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+
+    /* Sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* Animación */
+    transition: transform 0.3s;
+}
+
+.card-producto:hover {
+    transform: scale(1.05);
+}
+
+.card-producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-producto h3 {
+    margin: 15px 0;
+}
+
+/*  BOTONES DE LA WEB  */
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #2e7d32;
+}
+
+/*  SECCIÓN CONTACTO  */
+
+.contacto {
+    padding: 40px 20px;
+}
+
+/*  FORMULARIO DE CONTACTO  */
+
+.formulario {
+    max-width: 500px;
+    margin: auto;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-top: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    margin-top: 5px;
+
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.formulario button {
+    margin-top: 15px;
+}
+
+/*  FOOTER - PIE DE PÁGINA  */
+
+footer {
+    background-color: #2e7d32;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
+
+
+
+/*    RESPONSIVE DESIGN - Adaptación para movil */
+
+@media (max-width: 768px) {
+
+    .grid-productos {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
