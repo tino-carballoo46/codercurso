@@ -1,0 +1,12 @@
+.boton{
+ display:inline-block;
+ padding:10px 20px;
+ background-color:$color-principal;
+ color:white;
+ text-decoration:none;
+ border-radius:5px;
+
+ &:hover{
+  background-color:$color-secundario;
+ }
+}
