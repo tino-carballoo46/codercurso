@@ -1,0 +1,11 @@
+.card {
+  border: none;
+
+  button {
+    transition: $transition;
+
+    &:hover {
+      background-color: $color-secundario;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.navbar {
+  transition: $transition;
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  transition: $transition;
+
+  &:hover {
+    color: #a5f3b6 !important;
+  }
+}

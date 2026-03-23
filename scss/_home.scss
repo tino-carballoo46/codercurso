@@ -1,0 +1,13 @@
+.producto-card {
+  border-radius: $border-radius;
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
+}

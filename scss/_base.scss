@@ -1,0 +1,27 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: $color-texto;
+  background-color: rgb(167, 253, 141);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+section {
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .navbar {
+    text-align: center;
+  }
+}

@@ -1,0 +1,11 @@
+form {
+  input, textarea, select {
+    border-radius: $border-radius;
+    transition: $transition;
+
+    &:focus {
+      border-color: $color-principal;
+      box-shadow: 0 0 5px rgba(25,135,84,0.5);
+    }
+  }
+}

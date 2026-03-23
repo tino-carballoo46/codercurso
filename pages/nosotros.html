@@ -1,179 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conocé la historia de Buena Vibra, un emprendimiento de hamburguesas veganas nacido del amor por la cocina saludable.">
+  <title>Nosotros | Buena Vibra</title>
 
-    <!-- Metadatos del sitio -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Título de la página -->
-    <title>Nosotros | Buena Vibra</title>
-
-    <!-- Bootstrap CSS -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
-
-    <!-- CSS propio -->
-    <link rel="stylesheet" href="../css/style.css">
-
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!--   HEADER - ENCABEZADO DEL SITIO  -->
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html">Buena Vibra 🌱</a>
 
-    <header class="bg-dark text-white">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="container">
-
-            <nav class="navbar navbar-expand-lg navbar-dark">
-
-                <!-- Logo / nombre del sitio -->
-                <a class="navbar-brand" href="../index.html">
-                    Buena Vibra
-                </a>
-
-
-                <!-- Botón menú mobile -->
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#menu"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-
-                <!-- Menú de navegación -->
-                <div class="collapse navbar-collapse" id="menu">
-
-                    <ul class="navbar-nav ms-auto">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">
-                                Inicio
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="productos.html">
-                                Productos
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" href="nosotros.html">
-                                Nosotros
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">
-                                Contacto
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </nav>
-
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  </header>
 
-    </header>
+  <!-- MAIN -->
+  <main>
 
-    <!-- CONTENIDO PRINCIPAL -->
+    <!-- HERO -->
+    <section class="bg-success text-white text-center py-5">
+      <div class="container">
+        <h1 class="fw-bold">Nuestra historia</h1>
+        <p class="lead">Más que hamburguesas, una forma de vivir 🌱</p>
+      </div>
+    </section>
 
-    <main class="container mt-5">
-
-        <!-- Sección sobre la pyme -->
-        <section class="nosotros text-center">
-
-            <h1 class="mb-4">
-                Sobre Buena Vibra
-            </h1>
-
-            <p class="mb-4">
-                En <strong>Buena Vibra</strong> creemos que la comida
-                puede ser deliciosa, saludable y amigable con el planeta.
-                Nuestro objetivo es ofrecer hamburguesas veganas que
-                combinen sabor, calidad y una experiencia única.
-            </p>
-
-            <p class="mb-4">
-                Utilizamos ingredientes frescos, recetas originales
-                y un proceso de preparación pensado para que cada
-                hamburguesa tenga un sabor increíble.
-            </p>
-
-        </section>
-
-
-
-        <!-- Sección misión -->
-        <section class="row mt-5">
-
-            <!-- Misión -->
-            <article class="col-md-6 text-center">
-
-                <h2 class="mb-3">
-                    Nuestra Misión
-                </h2>
-
-                <p>
-                    Brindar opciones de comida vegana accesibles
-                    y deliciosas para todas las personas,
-                    promoviendo un estilo de vida más saludable
-                    y sustentable.
-                </p>
-
-            </article>
-
-
-
-            <!-- Visión -->
-            <article class="col-md-6 text-center">
-
-                <h2 class="mb-3">
-                    Nuestra Visión
-                </h2>
-
-                <p>
-                    Convertirnos en una referencia dentro
-                    del mundo de la comida vegana,
-                    llevando nuestras hamburguesas
-                    a cada vez más personas.
-                </p>
-
-            </article>
-
-        </section>
-
-
-
-    </main>
-
-    <!--  FOOTER - PIE DE PÁGINA  -->
-
-    <footer class="bg-dark text-white text-center p-3 mt-5">
+    <!-- HISTORIA -->
+    <section class="container my-5" data-aos="fade-up"></section>
+      <article class="mx-auto" style="max-width: 800px;">
+        <h2 class="mb-4 text-center">¿Cómo nació Buena Vibra?</h2>
 
         <p>
-            © 2026 Buena Vibra - Hamburguesas Veganas
+          Buena Vibra nace a partir de una idea simple, pero muy poderosa: que comer rico también puede ser saludable.
+          Todo comenzó en una cocina familiar, donde una madre apasionada por la alimentación consciente decidió que
+          quería ofrecer algo diferente.
         </p>
 
-    </footer>
+        <p>
+          Con el tiempo, esa pasión se transformó en un emprendimiento. No solo se trataba de cocinar, sino de generar
+          un cambio, de demostrar que se puede disfrutar de una buena hamburguesa sin dejar de lado el cuidado del cuerpo
+          y del planeta.
+        </p>
 
-    <!-- Bootstrap JS (SIEMPRE al final del body) -->
+        <p>
+          Cada receta fue pensada con dedicación, buscando el equilibrio perfecto entre sabor, calidad y bienestar.
+          Así nació Buena Vibra: un espacio donde la comida transmite energía positiva, compromiso y una forma distinta
+          de ver la alimentación.
+        </p>
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
-    </script>
+        <p class="fw-semibold text-center mt-4">
+          Porque creemos que pequeñas decisiones pueden generar grandes cambios 💚
+        </p>
+      </article>
+    </section>
 
+    <!-- VALORES -->
+    <section class="bg-light py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">Nuestros valores</h2>
+
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up"></div>
+            <h4>🌱 Alimentación consciente</h4>
+            <p>Elegimos ingredientes de origen vegetal que cuidan tu salud.</p>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up"></div>
+            <h4>💚 Compromiso</h4>
+            <p>Buscamos generar un impacto positivo en cada producto.</p>
+          </div>
+
+          <div class="text-center" data-aos="fade-up">
+            <h4>🌍 Sustentabilidad</h4>
+            <p>Apostamos por un consumo responsable y amigable con el planeta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-success text-white text-center py-3">
+    <p class="mb-0">© 2026 Buena Vibra - Todos los derechos reservados </p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
 </body>
-
 </html>
